@@ -16,3 +16,7 @@ A minimum example of working code would be:
     
 The constructor takes as arguments the model, training data and any arguments you may pass to the fit() funtion of the model.
     
+    
+## TODO
+- Add verbose for training every batch
+
