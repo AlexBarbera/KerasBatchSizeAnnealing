@@ -6,9 +6,10 @@ A minimum example of working code would be:
     import KerasBatchSizeAnnealing
     from keras.datasets import mnist
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
-    args = 
+    
     def callback(epoch):
 	    return 32 * epoch / 10 + 32
+    
     model = createModel()
     trainer = BatchSizeAnnealing(model, x_train, y_train, validation_data=(x_test, y_test), epochs=EPOCH, verbose=1)
     history = trainer.fit()
