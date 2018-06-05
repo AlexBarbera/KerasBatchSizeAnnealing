@@ -5,7 +5,7 @@ A minimum example of working code would be:
 
     import KerasBatchSizeAnnealing
     from keras.datasets import mnist
-    (x_train, y_train), (_, _) = mnist.load_data()
+    (x_train, y_train), (x_test, y_test) = mnist.load_data()
     args = 
     def callback(epoch):
 	    return 32 * epoch / 10 + 32
