@@ -3,7 +3,7 @@ This repository contains a wrapper class for adjusting the batch_size after aech
 
 A minimum example of working code would be:
 
-    import KerasBatchSizeAnnealing
+    from BatchSizeAnnealing import BatchSizeAnnealing
     from keras.datasets import mnist
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
     
